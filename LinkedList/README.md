@@ -33,3 +33,9 @@ gcc linkedList.c -o linkedList
 ``` bash
 ./linkedList
 ```
+
+#### Learnings
+```
+1. Pointers
+2. Memory Allocation & type casting
+```
