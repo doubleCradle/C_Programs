@@ -99,10 +99,9 @@ void add_in_bet(int e1, int e2, int e3){
 
 int main() {
 	make_head(0);
-	add_node(1);
-	add_node(2);
-	add_node(3);
-	add_node(4);
+	for(int i=0; i<5; i++){
+		add_node(i);
+	}
 	add_in_bet(1,2, 8);
 	traverse_backwards(-1);
 	del_node(8);
