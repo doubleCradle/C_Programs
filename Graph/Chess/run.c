@@ -4,6 +4,8 @@
 #include"src/boardOps.h"
 #include"src/graph.h"
 
+#define BOARD_SIZE 8
+
 void renderBoard(SDL_Renderer* renderer, Node board[BOARD_SIZE][BOARD_SIZE]) {
     for (int y = 0; y < BOARD_SIZE; y++) {
         for (int x = 0; x < BOARD_SIZE; x++) {
@@ -24,8 +26,8 @@ void renderBoard(SDL_Renderer* renderer, Node board[BOARD_SIZE][BOARD_SIZE]) {
 
 int main(int argc, char* argv[]){
 
-Node board[8][8];
-initializeBoard(board);
+Node board[BOARD_SIZE][BOARD_SIZE];
+graph_init(board);
 //printNeighbors(&board[1][1]);
 SDL_Init(SDL_INIT_VIDEO); // if this returns 0, all ok. Else some error posted by SDL_GetError().
 SDL_Window* window = SDL_CreateWindow("SDL Window", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, 400, 400, SDL_WINDOW_SHOWN);
