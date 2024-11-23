@@ -8,6 +8,8 @@ typedef struct Node {
     struct Node* neighbors[8]; 
 } Node;
 
+#define BOARD_SIZE 8
+
 void graph_init(Node board[BOARD_SIZE][BOARD_SIZE]) {
  char alphabet[] = {'a','b','c','d','e','f','g','h'};
     for (int y = 0; y < BOARD_SIZE; y++) {
