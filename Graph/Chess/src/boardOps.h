@@ -1,10 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include<SDL2/SDL.h>
-#define BOARD_SIZE 8
-#include"graph.h"
-
-
 
 void printNeighbors(Node* node) {
     //printf("Neighbors of (%d, %d):\n", node->x, node->y);
