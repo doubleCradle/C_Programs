@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include<graph.h>
+#include"graph.h"
 
 void printNeighbors(Node* node) {
     //printf("Neighbors of (%d, %d):\n", node->x, node->y);
