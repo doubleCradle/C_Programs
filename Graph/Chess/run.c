@@ -1,7 +1,6 @@
 
 #include<SDL2/SDL.h>
 #include<stdio.h>
-#include"src/boardOps.h"
 #include"src/graph.h"
 
 #define BOARD_SIZE 8
