@@ -1,7 +1,8 @@
 
 #include<SDL2/SDL.h>
 #include<stdio.h>
-#include"src/board.h"
+#include"src/boardOps.h"
+#include"src/graph.h"
 
 void renderBoard(SDL_Renderer* renderer, Node board[BOARD_SIZE][BOARD_SIZE]) {
     for (int y = 0; y < BOARD_SIZE; y++) {
