@@ -1,3 +1,5 @@
+#include<SDL2/SDL.h>
+
 typedef struct Node {
     char name;
     int x; 
