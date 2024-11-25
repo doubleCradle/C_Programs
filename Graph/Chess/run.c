@@ -1,7 +1,7 @@
 
 #include<SDL2/SDL.h>
 #include<stdio.h>
-#include"src/graph2.h"
+#include"src/graph.h"
 #include<SDL2/SDL_image.h>
 
 #define BOARD_SIZE 8
