@@ -107,7 +107,17 @@ while(running){
 	SDL_RenderPresent(renderer);
 }
 
+	for (int y = 0; y < BOARD_SIZE; y++) {
+        for (int x = 0; x < BOARD_SIZE; x++) {
+            if (board[y][x].piece.texture != NULL) {
+                SDL_DestroyTexture(board[y][x].piece.texture); // Free the texture
+            }
+        }
+    }
+
+SDL_DestroyRenderer(renderer);
 SDL_DestroyWindow(window);
+IMG_Quit();
 SDL_Quit();
 
 return 0;
